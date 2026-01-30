@@ -1,0 +1,5 @@
+Divvy Data License Agreement
+
+This project uses data from Chicago’s Divvy bike share system.
+By using these data files, you agree to the terms of the Divvy Data License:
+https://www.divvybikes.com/data-license-agreement
