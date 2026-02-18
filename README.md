@@ -11,7 +11,7 @@ The analysis was conducted using R as part of the Google Data Analytics Capstone
 ## Report
 The full analysis, visualizations, and findings are available in the HTML report:
 
-- **Cyclistic-Bike-Share-Case-Study.html**
+-[Click to Open Report]([https://YourUsername.github.io/RepoName/](https://udohchioma78.github.io/Cyclistic-Bike-Share-Case-Study/))
 
 ---
 
