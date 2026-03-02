@@ -994,5 +994,3 @@ Casual and member riders use Cyclistic bikes in fundamentally different ways. By
 - No demographic data available
 
   
-
-
