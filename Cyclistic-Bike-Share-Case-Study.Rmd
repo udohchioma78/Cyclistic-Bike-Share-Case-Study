@@ -1,4 +1,3 @@
-
 ---
 title: "Cyclistic Bike-Share Case Study"
 author: "Udoh Chioma Lilian"
@@ -669,11 +668,11 @@ ggplot(daily_summary, aes(trip_day, avg_tripduration, fill = usertype)) +
        y = "Average Trip Duration (minutes)") +
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 24, face = "bold"),
-    axis.title = element_text(size = 20),
-    axis.text = element_text(size = 16),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 16)
+    plot.title = element_text(size = 20, face = "bold"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 12)
   )
 ```
 
@@ -700,11 +699,11 @@ ggplot(daily_trip_counts,
   ) +
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 24, face = "bold"),
-    axis.title = element_text(size = 20),
-    axis.text = element_text(size = 16),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 16)
+    plot.title = element_text(size = 20, face = "bold"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 12)
   )
 
 ```
@@ -793,10 +792,10 @@ ggplot(trip_distribution_by_day_type,
   
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 20, face = "bold"),
-    axis.title = element_text(size = 16),
+    plot.title = element_text(size = 18, face = "bold"),
+    axis.title = element_text(size = 12),
     axis.text = element_text(size = 12),
-    legend.title = element_text(size = 14),
+    legend.title = element_text(size = 12),
     legend.text = element_text(size = 12)
   )
 ```
@@ -834,7 +833,7 @@ ggplot(trip_distribution_by_usertype,
   
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 16, face = "bold"),
+    plot.title = element_text(size = 18, face = "bold"),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 8),
     legend.title = element_text(size = 10),
@@ -859,11 +858,11 @@ ggplot(hourly_trips, aes(start_hour, trip_count, color = usertype)) +
        x = "Hour of Day",
        y = "Trip Count") +
   theme(
-    plot.title = element_text(size = 24, face = "bold"),
-    axis.title = element_text(size = 20),
-    axis.text = element_text(size = 16),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 16)
+    plot.title = element_text(size = 18, face = "bold"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 12)
   )
 ```
 
@@ -882,10 +881,10 @@ top_start_stations_usertype %>%
        y = "Trip Count") +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    axis.title = element_text(size = 16),
+    axis.title = element_text(size = 12),
     axis.text = element_text(size = 12),
-    legend.title = element_text(size = 14),
-    legend.text = element_text(size = 14)
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 12)
   )
 ```
 
@@ -984,12 +983,17 @@ Since casual riders mostly ride on weekends and during specific daytime hours, C
 
 ## 8. Conclusion
 
-Casual and member riders use Cyclistic bikes in fundamentally different ways. By leveraging these behavioral insights, Cyclistic can design targeted and realistic strategies to convert casual riders into loyal annual members, ultimately driving sustainable growth and revenue stability.
+Casual and member riders use Cyclistic bikes in fundamentally different ways. Casual riders take longer but fewer trips, particularly on weekends, while members ride more frequently with shorter durations, especially on weekdays. These patterns align with leisure use for casual riders and commuting behavior for members.
+
+By leveraging these behavioral insights, Cyclistic can design targeted and realistic strategies to convert casual riders into loyal annual members. Recommended strategies include trial memberships, targeted notifications during peak casual riding hours, and promotions at high-traffic stations. Visualizations of peak ride times, trip durations, and start stations support these recommendations by highlighting when and where casual riders could be encouraged to try membership.
+
+These insights provide actionable guidance for increasing membership uptake in order to drive sustainable growth and revenue stability for Cyclistic.
 
 ## 9. Limitations
 
 - Data covers only Q1 2019 and Q1 2020; patterns may vary in other quarters
 - Seasonal or weather effects are not captured
 - No demographic data available
+- Due to anonymized data, individual spending or exact membership savings could not be calculated. All insights are based on the observed behaviourial patterns from the data provided.
 
   
